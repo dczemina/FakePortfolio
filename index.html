@@ -1,0 +1,195 @@
+<html>
+	<head>
+		<style>
+			
+			/* Site-wide Styling */
+			
+			body {
+			  margin: 0px;
+			  padding: 0px;
+			  font-family: sans-serif;
+			}
+			
+			/* links */
+			a {
+				color: #ffcc66;
+				text-transform: uppercase;
+				font-size: 1.5em;
+				transition: all 0.25s ease-in;
+				text-decoration: none;
+			}
+			
+			a:hover {
+				color: #cc3300;
+			}
+			
+			/* default styles are for all screen sizes */
+			
+			/* specific boxes */
+			
+			nav {
+				padding: 8px;
+				background-color: black;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				box-sizing: border-box;
+				
+				text-align: center;
+				color: white;
+			}
+			
+			.nav-header {
+				margin: 4px 8px;
+			}
+			
+			nav img {
+				height: 128px;
+				width: 128px;
+			}
+			
+			.links-box {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: center;
+				flex: 2 1 auto;
+			}
+			
+			.section-box {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.section-title-box {
+				text-align: left;
+				background-color: #282828;
+				color: white;
+			}
+			
+			.section-title-box h2 {
+				margin-left: 8px;
+			}
+			
+			.section-content-box {
+				margin: 10px 5px;			
+			}
+			
+			.famous-works-box {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
+			
+			.famous-work-box {
+				box-sizing: border-box;
+				padding: 5px;
+				width: 100%;
+			
+			}
+			
+			/* generic classes */
+			.width-100 {
+				width: 100%;
+			}
+			
+			.flex-2 {
+				flex: 2 1 auto;
+			}
+			
+			/* medium screen */
+			@media screen and (min-width: 640px) {
+				nav {
+					flex-direction: row;
+				}
+				.links-box {
+					flex-direction: row;
+				}
+				.contact-links-box {
+				
+				}
+			}
+			
+			/* larger screens */
+			@media screen and (min-width: 768px) {
+			
+				.section-box {
+					flex-direction: row;
+				}
+				.section-title-box {
+					padding: 8px 32px 8px 0px;
+					text-align: right;
+					min-width: 18%;
+					width: 18%;
+				}
+				.famous-works-box {
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+				.famous-work-box {
+					width: 50%;
+				}
+				
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<img src="assets/david-fiery-2.jpg" alt="David Zemina looking Fiery as F" style="margin: auto"/>
+				<div class="nav-header">
+					<h1>David Zemina</h1>
+					<span>Famous Artist</span>
+				</div>
+				<div class="links-box flex-2">
+					<a href="#about">About</a>
+					<a href="#work">Work</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="about" class="section-box">
+				<div class="section-title-box">
+					<h2>About</h2>
+				</div>
+				<div class="section-content-box">
+					<p>If you weren't aware already that I am an amazing artist (which is impossible, let's be honest here) then scroll around my collection
+					of amazing artwork on my site. I exclusively create works that show my own face, because anything else would be a waste of time.</p>
+					<p>Aside from being the greatest artist of all time, I am also very humble</p>
+				</div>
+			</section>
+			<section id="work" class="section-box">
+				<div class="section-title-box">
+					<h2>Work</h2>
+				</div>
+				<div class="section-content-box">
+					<div class="famous-works-box">
+						<img class="famous-work-box" src="assets/david-blues-2.jpg"/>
+						<img class="famous-work-box" src="assets/david-blues-7.jpg"/>
+						<img class="famous-work-box" src="assets/David-Dragon Rider-7.jpg"/>
+						<img class="famous-work-box" src="assets/david-fantasy knight-2.jpg"/>
+						<img class="famous-work-box" src="assets/david-painting-7.jpg"/>
+						<img class="famous-work-box" src="assets/david-pencil sketch-8.jpg"/>
+						<img class="famous-work-box" src="assets/david-prehistoric hunter-7.jpg"/>
+						<img class="famous-work-box" src="assets/david-punk rocker-3.jpg"/>
+						<img class="famous-work-box" src="assets/david-spaceman-5.jpg"/>
+						<img class="famous-work-box" src="assets/david-surfer-2.jpg"/>
+					</div>
+				</div>
+			</section>
+			<section id="contact" class="section-box">
+				<div class="section-title-box">
+					<h2>Contact</h2>
+				</div>
+				<div class="section-content-box width-100">
+					<div class="links-box">
+						<a href="mailto:me@somesite.com">Email</a>
+						<a href="mailto:me@somesite.com">Email 2</a>
+						<a href="mailto:me@somesite.com">Email 3</a>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
