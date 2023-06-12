@@ -83,9 +83,24 @@
 			
 			.famous-work-box {
 				box-sizing: border-box;
+				position: relative;
 				padding: 5px;
 				width: 100%;
+			}
 			
+			.famous-work-box img {
+				width: 100%
+			}
+			
+			.famous-work-text {
+				position: absolute;
+				width: calc(100% - 16px);
+				bottom: 8;
+				left: 8;
+				padding: 6px 0px;
+				color: white;
+				text-align: center;
+				background-color: #282828;
 			}
 			
 			/* generic classes */
@@ -136,7 +151,7 @@
 	<body>
 		<header>
 			<nav>
-				<img src="assets/david-fiery-2.jpg" alt="David Zemina looking Fiery as F" style="margin: auto"/>
+				<img src="assets/David-fiery-2.jpg" alt="David Zemina looking Fiery as F" style="margin: auto"/>
 				<div class="nav-header">
 					<h1>David Zemina</h1>
 					<span>Famous Artist</span>
@@ -165,16 +180,46 @@
 				</div>
 				<div class="section-content-box">
 					<div class="famous-works-box">
-						<img class="famous-work-box" src="assets/david-blues-2.jpg"/>
-						<img class="famous-work-box" src="assets/david-blues-7.jpg"/>
-						<img class="famous-work-box" src="assets/David-Dragon Rider-7.jpg"/>
-						<img class="famous-work-box" src="assets/david-fantasy knight-2.jpg"/>
-						<img class="famous-work-box" src="assets/david-painting-7.jpg"/>
-						<img class="famous-work-box" src="assets/david-pencil sketch-8.jpg"/>
-						<img class="famous-work-box" src="assets/david-prehistoric hunter-7.jpg"/>
-						<img class="famous-work-box" src="assets/david-punk rocker-3.jpg"/>
-						<img class="famous-work-box" src="assets/david-spaceman-5.jpg"/>
-						<img class="famous-work-box" src="assets/david-surfer-2.jpg"/>
+						<div class="famous-work-box">
+							<img src="assets/David-Blues-2.jpg" alt="Portrait with blue hair and beard"/>
+							<div class="famous-work-text">The Wizard</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Blues-7.jpg" alt="Portrait with pink hair and an undercut"/>
+							<div class="famous-work-text">The Time Traveller</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Dragon Rider-7.jpg" alt="Portrait with horned helmet and a brown cloak"/>
+							<div class="famous-work-text">The Dragon rider</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Fantasy Knight-2.jpg" alt="Portrait looking from the side"/>
+							<div class="famous-work-text">The Knight</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Painting-7.jpg" alt="Modern portrait with unrealistic hair"/>
+							<div class="famous-work-text">Abstract Portrait</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Pencil Sketch-8.jpg" alt="Modern portrait drawn with a pencil"/>
+							<div class="famous-work-text">Pencil Sketch</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Prehistoric Hunter-7.jpg" alt="Portrait with long hair and a leather cap"/>
+							<div class="famous-work-text">The Prehistoric Hunter</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Punk Rocker-3.jpg" alt="Portrait with punk rock gear and red hair with an undercut"/>
+							<div class="famous-work-text">The Punk Rocker</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Spaceman-5.jpg" alt="Modern portrait with an astronaut outfit"/>
+							<div class="famous-work-text">The Space Explorer</div>
+						</div>
+						<div class="famous-work-box">
+							<img src="assets/David-Surfer-2.jpg" alt="Portrait depicting a surfer squinting with long hair"/>
+							<div class="famous-work-text">The Time Traveller</div>
+						</div>
 					</div>
 				</div>
 			</section>
